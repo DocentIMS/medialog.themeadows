@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="medialog.themeadows">
+
+ <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+    name="meadows-view"
+    for="*"
+    class=".meadows_view.MeadowsView"
+    template="meadows_view.pt"
+    permission="zope2.View"
+    layer="medialog.themeadows.interfaces.IMedialogThemeadowsLayer"
+    />
+
+</configure>
