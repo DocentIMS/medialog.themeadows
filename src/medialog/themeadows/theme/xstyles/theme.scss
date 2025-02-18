@@ -1,0 +1,81 @@
+// import styles coming ith the theme here:
+
+//@import styles
+
+
+
+// Plone styles:
+
+// Roboto is not included in this template and therefore we disable the setup here.
+$enable-roboto-webfont: false !default;
+
+.container { color: inherit}
+
+// Toolbar: to have a functional toolbar, we need some style from the default plone theme and bootstrap:
+
+// @import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Encode+Sans:200,400');
+// @import '@fontsource/encode-sans';
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Barceloneta and Bootstrap stylesheets
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.plone";
+
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.dark.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.dark.plone";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.properties";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.barceloneta";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "theme_variables";
+@import "variables";
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "@plone/plonetheme-barceloneta-base/scss/variables.colors.plone";
+
+@import "theme_variables";
+@import "variables";
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "@plone/plonetheme-barceloneta-base/scss/toolbar";
+
+
+
+// custom styles here:
+
+//*// Custom stuff
+
+// // 9. Add additional custom code here
+
+@import "custom";
+@import "../common";
+
+
+@import "html5up-editorial/assets/sass/main";
+
+#content-core h2 strong{
+	border-bottom: solid 3px #f56a6a;
+	margin: 0 0 2em 0;
+	padding: 0 0.75em 0.5em 0; 
+    display: inline-block;
+}
+
+#edit-bar{
+	@extend edit-zone !optional;
+}
+
+edit-zone  {
+	@extend menu !optional;
+}
+
+
+.btn {
+    @extend .button !optional;
+}
