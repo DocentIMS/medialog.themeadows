@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="medialog.themeadows.AddBoardOnly"
+        title="medialog.themeadows: Add BoardOnly"
+    />
+
+
+    <permission
         id="medialog.themeadows.AddResidentInformation"
         title="medialog.themeadows: Add ResidentInformation"
     />
