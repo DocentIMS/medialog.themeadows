@@ -7,6 +7,15 @@
  <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
+    name="front-page-view"
+    for="*"
+    class=".front_page_view.FrontPageView"
+    template="front_page_view.pt"
+    permission="zope2.View"
+    layer="medialog.themeadows.interfaces.IMedialogThemeadowsLayer"
+    />
+
+  <browser:page
     name="meadows-view"
     for="*"
     class=".meadows_view.MeadowsView"
