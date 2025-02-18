@@ -3,6 +3,14 @@
   <permissions>
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission name="medialog.themeadows: Add ResidentInformation" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Owner"/>
+      <role name="Contributor"/>
+    </permission>
+
+
     <permission name="medialog.themeadows: Add Amenity" acquire="True">
       <role name="Manager"/>
       <role name="Site Administrator"/>

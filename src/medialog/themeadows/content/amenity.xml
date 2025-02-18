@@ -1,9 +1,17 @@
-<model
-    xmlns="http://namespaces.plone.org/supermodel/schema"
-    xmlns:security="http://namespaces.plone.org/supermodel/security"
-    xmlns:form="http://namespaces.plone.org/supermodel/form"
-    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    i18n:domain="medialog.themeadows">
+<model xmlns:i18n="http://xml.zope.org/namespaces/i18n" 
+xmlns:form="http://namespaces.plone.org/supermodel/form" 
+xmlns:security="http://namespaces.plone.org/supermodel/security" 
+xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" 
+xmlns:indexer="http://namespaces.plone.org/supermodel/indexer" 
+xmlns:users="http://namespaces.plone.org/supermodel/users" 
+xmlns:lingua="http://namespaces.plone.org/supermodel/lingua" 
+i18n:domain="medialog.themeadows"
+xmlns="http://namespaces.plone.org/supermodel/schema">
   <schema>
+    <field name="key_points" type="plone.app.textfield.RichText">
+      <description/>
+      <required>False</required>
+      <title>Key Points</title>
+    </field>
   </schema>
 </model>

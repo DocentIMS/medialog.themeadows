@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="medialog.themeadows.AddResidentInformation"
+        title="medialog.themeadows: Add ResidentInformation"
+    />
+
+
+    <permission
         id="medialog.themeadows.AddAmenity"
         title="medialog.themeadows: Add Amenity"
     />
