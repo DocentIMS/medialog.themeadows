@@ -37,3 +37,7 @@ report.html
 reports/
 venv/
 # excludes
+src/medialog/.DS_Store
+src/medialog/themeadows/.DS_Store
+src/medialog/themeadows/theme/.DS_Store
+.DS_Store
