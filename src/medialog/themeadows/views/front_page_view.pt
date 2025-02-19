@@ -53,7 +53,7 @@
 
             <tal:repeat tal:repeat="item view/get_items|None">
               <article tal:define="obj item/getObject">
-                <a class="image" href="#">
+                <a class="image" href="${item/getURL}">
                   <img alt="" src="${item/getURL}/@@images/image">
                   </a>
                   <h3>Interdum aenean</h3>
