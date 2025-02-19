@@ -12,7 +12,7 @@
         <div tal:replace="structure  context/text/output|None"></div>
       </div>
      
-     <div class="row">
+     <div class="row w-100 clearfix">
      <hr class="border border-3 red"/>
      <h3>Key points</h3>
        <div tal:content="structure  context/key_points/output|None"></div>
