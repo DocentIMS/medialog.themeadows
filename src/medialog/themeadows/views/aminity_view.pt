@@ -7,11 +7,22 @@
 <body>
   <metal:content-core fill-slot="content-core">
   <metal:block define-macro="content-core">
+      <div class="w-100 ">
+         <img alt="" src="${context/absolute_url}/@@images/image/preview" class="img left float-left image-left" style="float: left">
+        <div tal:replace="structure  context/text/output|None"></div>
+      </div>
+     
+     <div class="row">
+     <hr class="border border-3 red"/>
+     <h3>Key points</h3>
+       <div tal:content="structure  context/key_points/output|None"></div>
+        <hr class="border border-3 red"/>
+      </div>
+     <style>
+      .image-left {float-left; margin: 0 1rem 1rem 0}
+     </style>
 
-     <tal:repeat tal:repeat="item view/get_items">
-     x
-
-     </tal:repeat>
+ 
 
   </metal:block>
   </metal:content-core>

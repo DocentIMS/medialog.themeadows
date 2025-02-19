@@ -11,6 +11,34 @@
         <tal:block tal:condition="context/portal_membership/isAnonymousUser">
             if user not logged put   carouse here
         </tal:block>
+
+        <!-- Add jQuery (if not already loaded) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Load Slick Carousel -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+<!-- Initialize Slick -->
+<script>
+  $(document).ready(function(){
+    $('.carousel').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: true,
+      arrows: true
+    });
+  });
+</script>
+
+
+        <div class="pat-carousel carousel" data-pat-carousel='{"timeout": 3, "auto": true, "loop": true}'>
+          <img src="https://picsum.photos/800/400?random=1" alt="Random Image 1">
+          <img src="https://picsum.photos/800/400?random=2" alt="Random Image 2">
+          <img src="https://picsum.photos/800/400?random=3" alt="Random Image 3">
+      </div>
+   
         
 
         <!-- Section -->
