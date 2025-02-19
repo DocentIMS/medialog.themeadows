@@ -22,12 +22,15 @@
   <!-- FRONTEND ONLY BLOCK -->
   <rules css:if-content="body.viewpermission-view, body.viewpermission-none">
     <!--<theme href="home.html" css:if-content=".section-front-page" />-->
-    <theme href="index.html" />
+    <theme href="index.html" /> 
+ 
+ 
     <notheme css:if-not-content="#visual-portal-wrapper" />
 
     <!-- ### REMOVE THIS RULE AFTER ACTIVATING YOUR OWN RULES BELOW ### -->
     <!-- Copy over the whole body content of Plone -->
     <!-- <replace theme-children="/html/body" content-children="/html/body" /> -->
+
 
     <rules css:if-content="#portal-top">
       <!-- Attributes -->
@@ -52,19 +55,19 @@
       <drop css:content="head link[rel='shortcut icon']" />
 
       <!-- drop the theme stylesheets -->
-      <drop theme="/html/head/link[rel='stylesheet']" />
+      <!-- <drop theme="/html/head/link[rel='stylesheet']" /> -->
 
       <!-- Pull in CSS Plone stylesheets for loged-in users -->
-      <after
+      <!-- <after
         css:theme-children="head"
         css:content="head link"
         css:if-not-content="html > body.userrole-anonymous"
-        />
+        /> -->
 
       <!-- Add theme stylesheets here, to have them at the bottom of all stylesheets -->
     
       <after theme-children="/html/head">
-        <link rel="stylesheet" href="++theme++meadows-theme/styles/theme.min.css" />
+        <link rel="stylesheet" href="/++theme++meadows-theme/styles/theme.css" />
       </after>
     
 
@@ -108,6 +111,21 @@
 
     <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
     <copy attributes="*" css:content="body" css:theme="body" />
+    
+    <!-- Portal Navigation -->
+    <!-- <replace css:theme-children="#portal-mainnavigation" css:content-children="#portal-mainnavigation" /> -->
+    <replace css:theme-children="#portal-mainnavigation" css:content-children="#navbarSupportedContent" />
+    <!-- <replace css:theme-children="#portal-globalnav-wrapper" css:content-children="#navbarSupportedContent"  /> -->
+      <!-- <replace css:theme="#portal-globalnav" css:content-children="#navbarSupportedContent"/> -->
+
+<rules >
+
+ 
+   
+    
+
+</rules>
+
 
     <!-- Copy anonymous actions like the login link -->
     <before
@@ -135,28 +153,30 @@
     <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
 
     <!-- Copy Plone navigation portlet -->
-    <!-- <replace
-      css:content="#portal-column-one .portlet.portletNavigationTree"
-      css:theme-children='#sidebar'
-      /> -->
+      <replace
+      css:content-children="#portal-column-one .portletNavigationTree"
+      css:theme-children='#sidebar > .inner'
+      />
 
     <!-- Copy all portal-column-one portlets but not portletNavigationTree into the sidebar -->
-    <!-- <after
+     <!-- <after
       css:content="#portal-column-one .portletWrapper > *:not(.portletNavigationTree)"
       css:theme-children='#sidebar'
-      /> -->
+      />   -->
 
     <!-- Copy all portal-column-two portlets into the same sidebar-->
-    <!-- <after
-      css:content="#portal-column-two .portletWrapper > *"
-      css:theme-children='#sidebar'
-      /> -->
+     <!-- <after
+      css:content-children="#portal-column-two" 
+      css:theme-children='#portal-column-two'
+      />   -->
 
     <!-- Copy Document Content -->
      <replace
       css:content-children="#content"
-      css:theme-children="main"
+      css:theme-children="#main-content"
       /> 
+
+
 
     <!-- Copy footer -->
      <!-- <replace

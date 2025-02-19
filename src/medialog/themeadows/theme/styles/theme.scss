@@ -95,7 +95,7 @@
 @import "@plone/plonetheme-barceloneta-base/scss/forms";
 @import "@plone/plonetheme-barceloneta-base/scss/controlpanels";
 @import "@plone/plonetheme-barceloneta-base/scss/login";
-// @import "@plone/plonetheme-barceloneta-base/scss/toolbar";
+@import "@plone/plonetheme-barceloneta-base/scss/toolbar";
 @import "@plone/plonetheme-barceloneta-base/scss/grid";
 @import "@plone/plonetheme-barceloneta-base/scss/content_base";
 @import "@plone/plonetheme-barceloneta-base/scss/content_tables";
@@ -118,8 +118,8 @@
 
 //*// Custom stuff
 @import "custom";
-@import "toolbar";
-// @import "../common";
+// @import "toolbar";
+@import "../common"; 
 // // 9. Add additional custom code here
 
 @import "html5up-editorial/assets/sass/main";
@@ -131,16 +131,70 @@
     display: inline-block;
 }
 
-#edit-bar{
-	@extend edit-zone;
-}
 
-edit-zone  {
-	@extend menu;
-}
-
+// #edit-zone  {
+// 	@extend menu !optional;
+// }
+ 
 
 .btn {
-    @extend .button;
+    @extend .button !optional;
 }
 
+.card-header a {
+	color: black !important;
+	border-bottom: solid 3px #f56a6a;
+	display: inline-block;
+	margin: 0 0 2em 0;
+	padding: 0 0.75em 0.5em 0; 
+	font-size: 1.38889em;
+	font-family: "Roboto Slab", serif;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#sidebar nav li {
+	border-top: solid 1px rgba(210, 215, 217, 0.75) !important;
+	margin: 0.5em 0 0 0  !important;
+	padding: 0.5em 0 0 0  !important;
+	list-style-type: none !important;
+}
+
+#sidebar .navTreeItem a,
+#sidebar nav li a {
+	color: black !important;
+	text-decoration: none !important;
+	transition: none !important;
+	text-transform:  uppercase;
+	border-bottom: 0 none;
+}
+
+#sidebar {
+	min-height: 100vh;
+	height: 100%;
+	transform: translateX(0);
+    transition: transform 1.6s ease-in-out; 
+}
+
+#sidebar.sidebar-hidden,
+.sidebar-hidden {
+	transform: translateX(0);
+    transition: transform 1.6s ease-in-out; 
+	width: 0 !important;
+	display: none !important;
+}
+
+.card-header {
+	border-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+#sidebar ul.navTree {
+    padding-left: 0
+
+}
+
+
+body.col-one.col-content #portal-column-content {
+	padding-left: 4rem;
+}

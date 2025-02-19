@@ -1,6 +1,6 @@
 #form-widgets-IMedialogDutchmanThemeSettings-extra_css { width: 100%; height: 100em; }
 
-.plone-toolbar-left #edit-zone.pat-toolbar {z-index: 20}
+// .plone-toolbar-left #edit-zone.pat-toolbar {z-index: 20}
 
 #viewlet-below-content {
     @extend .container;
@@ -14,31 +14,31 @@ table.grid tbody tr td {
 }
  
 
-.card {
-position: relative;
-display: -ms-flexbox;
-display: flex;
--ms-flex-direction: column;
-flex-direction: column;
-min-width: 0;
-word-wrap: break-word;
-background-color: #fff;
-background-clip: border-box;
-border: 1px solid rgba(0, 0, 0, 0.125);
-border-radius: 0.25rem;
-}
+// .card {
+// position: relative;
+// display: -ms-flexbox;
+// display: flex;
+// -ms-flex-direction: column;
+// flex-direction: column;
+// min-width: 0;
+// word-wrap: break-word;
+// background-color: #fff;
+// background-clip: border-box;
+// border: 1px solid rgba(0, 0, 0, 0.125);
+// border-radius: 0.25rem;
+// }
 
-.card-block  {
-	padding: 1rem;
-}
+// .card-block  {
+// 	padding: 1rem;
+// }
 
 
 
-/* @group style */
+// /* @group style */
 
-#portal-globalnav-wrapper {
-	z-index: 10
-}
+// #portal-globalnav-wrapper {
+// 	z-index: 10
+// }
 
 /* fix for mosaic padding and margin on fluid rows */
 #content div.mosaic-grid-row.mosaic-grid-row-fluid {
