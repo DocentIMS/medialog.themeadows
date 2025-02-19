@@ -33,11 +33,12 @@
 </script>
 
 
-        <div class="pat-carousel carousel" data-pat-carousel='{"timeout": 3, "auto": true, "loop": true}'>
-          <img src="https://picsum.photos/800/400?random=1" alt="Random Image 1">
-          <img src="https://picsum.photos/800/400?random=2" alt="Random Image 2">
-          <img src="https://picsum.photos/800/400?random=3" alt="Random Image 3">
+      <div class="pat-carousel carousel" data-pat-carousel='{"timeout": 3, "auto": true, "loop": true}'>
+          <img class="image" src="https://picsum.photos/800/400?random=1" alt="Random Image 1">
+          <img class="image" src="https://picsum.photos/800/400?random=2" alt="Random Image 2">
+          <img class="image" src="https://picsum.photos/800/400?random=3" alt="Random Image 3">
       </div>
+      <p> </p>
    
         
 
