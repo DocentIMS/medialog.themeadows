@@ -8,8 +8,13 @@
 
         <div tal:content="structure  context/text/output|None"></div>
 
+        <tal:block tal:condition="context/portal_membership/isAnonymousUser">
+            if user not logged put   carouse here
+        </tal:block>
+        
+
         <!-- Section -->
-        <section>
+        <section tal:condition="view/get_items|None">
           <header class="major">
             <h2>Amenities</h2>
           </header>
@@ -34,6 +39,7 @@
               </tal:repeat>
             </div>
           </section>
+
 
         </metal:block>
       </metal:content-core>
