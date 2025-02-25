@@ -113,8 +113,8 @@
     <copy attributes="*" css:content="body" css:theme="body" />
     
     <!-- Portal Navigation -->
-    <!-- <replace css:theme-children="#portal-mainnavigation" css:content-children="#portal-mainnavigation" /> -->
-    <replace css:theme-children="#portal-mainnavigation" css:content-children="#navbarSupportedContent" />
+    <replace css:theme-children="#portal-mainnavigation" css:content-children="#portal-mainnavigation" />
+    <!-- <replace css:theme-children="#portal-mainnavigation" css:content-children="#navbarSupportedContent" /> -->
     <!-- <replace css:theme-children="#portal-globalnav-wrapper" css:content-children="#navbarSupportedContent"  /> -->
       <!-- <replace css:theme="#portal-globalnav" css:content-children="#navbarSupportedContent"/> -->
 
@@ -153,10 +153,10 @@
     <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
 
     <!-- Copy Plone navigation portlet -->
-      <replace
+      <!-- <replace
       css:content-children="#portal-column-one .portletNavigationTree"
       css:theme-children='#sidebar > .inner'
-      />
+      /> -->
 
     <!-- Copy all portal-column-one portlets but not portletNavigationTree into the sidebar -->
      <!-- <after
