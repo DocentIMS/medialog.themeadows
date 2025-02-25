@@ -6,6 +6,7 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
 
+   <xi:include href="++theme++barceloneta/backend.xml"/> 
   <!-- <xi:include href="++theme++barceloneta/grid-col-marker.xml"/> -->
 
   <theme href="index.html" />
