@@ -16,7 +16,7 @@
     />
 
   <browser:page
-    name="front-page-view"
+    name="meadows-front-view"
     for="*"
     class=".front_page_view.FrontPageView"
     template="front_page_view.pt"
