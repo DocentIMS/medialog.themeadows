@@ -108,18 +108,18 @@
 @import "@plone/plonetheme-barceloneta-base/scss/sitenav";
 @import "@plone/plonetheme-barceloneta-base/scss/breadcrumbs";
 @import "@plone/plonetheme-barceloneta-base/scss/content";
-@import "@plone/plonetheme-barceloneta-base/scss/comments";
+// @import "@plone/plonetheme-barceloneta-base/scss/comments";
 @import "@plone/plonetheme-barceloneta-base/scss/portlets";
 @import "@plone/plonetheme-barceloneta-base/scss/footer";
-
 @import "@plone/plonetheme-barceloneta-base/scss/print";
-
 @import "@plone/plonetheme-barceloneta-base/scss/roboto-webfont";
 
 //*// Custom stuff
-@import "custom";
+@import "comments.scss";
+@import "custom.scss";
+@import "../common.scss"; 
 // @import "toolbar";
-@import "../common"; 
+
 // // 9. Add additional custom code here
 
 @import "html5up-editorial/assets/sass/main";
