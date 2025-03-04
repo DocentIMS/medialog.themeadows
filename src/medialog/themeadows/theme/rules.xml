@@ -61,10 +61,10 @@
            css:theme-children="#portal-globalnav"
   />
   <!-- set aria-label for toggler button -->
-  <copy attributes="aria-label"
+  <!-- <copy attributes="aria-label"
         css:content=".navbar-toggler"
         css:theme=".navbar-toggler"
-  />
+  /> -->
   <!-- move searchbox into place -->
   <replace css:content="#portal-searchbox"
            css:theme="#portal-searchbox"

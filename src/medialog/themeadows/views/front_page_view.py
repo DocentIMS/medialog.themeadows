@@ -23,3 +23,8 @@ class FrontPageView(BrowserView):
     
     def get_items(self):
         return api.content.find(portal_type='Amenity')
+    
+        
+    def get_images(self):
+        return api.content.find(portal_type='Image', Subject="slider") 
+        

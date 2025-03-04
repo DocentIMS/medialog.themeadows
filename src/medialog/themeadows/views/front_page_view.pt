@@ -1,9 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
   xmlns:tal="http://xml.zope.org/namespaces/tal"
-  xmlns:i18n="http://xml.zope.org/namespaces/i18n" 
-  i18n:domain="medialog.themeadows" 
-  metal:use-macro="context/main_template/macros/master">
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n" i18n:domain="medialog.themeadows" metal:use-macro="context/main_template/macros/master">
   <body>
     <metal:content-core fill-slot="content-core">
       <metal:block define-macro="content-core">
@@ -15,41 +13,42 @@
         </tal:block>
 
         <!-- Add jQuery (if not already loaded) -->
-            <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
-            <!-- Load Slick Carousel -->
-            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
-            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
-            <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+        <!-- Load Slick Carousel -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
 
-            <!-- Initialize Slick -->
-            <script>
+        <!-- Initialize Slick -->
+        <script>
               $(document).ready(function(){
                 $('.carousel').slick({
                   autoplay: true,
                   autoplaySpeed: 3000,
-                  dots: false,
+                  dots: true,
                   arrows: false
                 });
               });
-            </script>
+        </script>
 
-      <div class="pat-carousel carousel" data-pat-carousel='{"timeout": 3, "auto": true, "loop": true}'>
-          <img class="image" src="https://picsum.photos/800/400?random=1" alt="Random Image 1">
-          <img class="image" src="https://picsum.photos/800/400?random=2" alt="Random Image 2">
-          <img class="image" src="https://picsum.photos/800/400?random=3" alt="Random Image 3">
-      </div>
-      <p> </p>
-   
-      <!-- Section -->
-      <section tal:condition="view/get_items|None">
+
+        <div class="pat-carousel carousel" data-pat-carousel='{"timeout": 3, "auto": true, "loop": true}'>
+          <tal:repeat tal:repeat="image view/get_images|None">
+            <img class="image" src="${image/getURL}" alt="image/Title"/>
+          </tal:repeat>
+        </div>
+        <p></p>
+
+        <!-- Section -->
+        <section tal:condition="view/get_items|None">
           <header class="major">
             <h2>Amenities</h2>
           </header>
-      </section>
+        </section>
 
-      <section>
-      <div class="posts">
+        <section>
+          <div class="posts">
 
             <tal:repeat tal:repeat="item view/get_items|None">
               <article tal:define="obj item/getObject">
@@ -57,7 +56,8 @@
                   <img alt="" src="${item/getURL}/@@images/image">
                   </a>
                   <h3>${item/Title}</h3>
-                  <div tal:content="structure obj/text/output|None"></div>
+                  <!-- <div tal:content="structure obj/text/output|None"></div> -->
+                  <p>${item/Description}</p>
                   <ul class="actions">
                     <li>
                       <a class="button" href="${item/getURL}">More</a>

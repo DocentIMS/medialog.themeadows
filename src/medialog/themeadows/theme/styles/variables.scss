@@ -42,7 +42,7 @@ $cursor-disabled:                           not-allowed;
 //*// SCAFFOLDING
  
 $plone-body-bg:             $body-bg;
-// $plone-footer-bg:            				 red;
+$plone-footer-bg:            			#AAA;
 $plone-text-color:           				 #000;
 $plone-link-hover-color:     				 darken($plone-link-color, 75%);
 $headings-color:                  darken($plone-link-color, 15%);  // virker
@@ -401,7 +401,7 @@ $default-published-color:				$link-color; //published and external same color
 
 
 $body-bg:            				   #FFF;
-$footer-bg:            				 $link-color; //portland
+$footer-bg:            				 #DDD; //portland
 $text-color:           				 #000;
 $link-hover-color:     				 darken($link-color, 15%);
 
@@ -566,7 +566,7 @@ $border-base:							1px solid $link-color;
 $portlet-header-bg:					$link-color;
 $portlet-header-color:				 #FFF;
 $portlet-content-bg:					#fff;
-$portlet-footer-bg:					$link-color;
+$portlet-footer-bg:					#DDD;
 $portlet-border:						1px solid $link-color;
 $portlet-contrast-bg:					#FFF;
 $portlet-event-bullet:				$link-color;
