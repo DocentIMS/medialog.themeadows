@@ -9,8 +9,8 @@
         <div tal:content="structure  context/text/output|None"></div>
 
         <tal:block tal:condition="context/portal_membership/isAnonymousUser">
-            if user not logged put   carouse here
-        </tal:block>
+   
+
 
         <!-- Add jQuery (if not already loaded) -->
         <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
@@ -39,6 +39,7 @@
           </tal:repeat>
         </div>
         <p></p>
+         </tal:block>
 
         <!-- Section -->
         <section tal:condition="view/get_items|None">
