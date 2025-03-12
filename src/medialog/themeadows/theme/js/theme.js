@@ -1,12 +1,12 @@
 // Custom JavaScript
 
-(function($) {
-  'use strict'; // Start of use strict
+// (function($) {
+//   'use strict'; // Start of use strict
 
-  $(document).ready(function() {
+//   $(document).ready(function() {
 
-    // Your custom JavaScript goes here
+//     // Your custom JavaScript goes here
 
-  });
+//   });
 
-})(jQuery); // End of use strict
+// })(jQuery); // End of use strict
