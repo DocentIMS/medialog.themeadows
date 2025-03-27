@@ -1,0 +1,94 @@
+.outer-wrapper {
+    background-color: #999;
+    min-height: 100vh;
+}
+
+h1.documentFirstHeading {
+    background-color: rgb(95, 46, 46);
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.template-edit #above-content-wrapper,
+.template-action_items #above-content-wrapper {
+    display: none !important;
+}
+
+.template-action_items .pat-formunloadalert,
+.template-edit .pat-formunloadalert {
+    background: whitesmoke;
+    max-width: 1340px;
+    margin: auto;
+    padding: 2rem;
+    box-shadow:   0 0 20px 2px #555 ;
+}
+
+#content .formControls {
+    background: none;
+}
+
+#xcontent .formControl button {
+    border: 1px solid black !important;
+    color: black !important;
+    box-shadow: inset 0 0 0 2px black !important;
+
+}
+
+.pat-formunloadalert .form-label,
+.pat-formunloadalert legend,
+legend {
+    color: black !important;
+    margin-right: 1rem;
+    line-height: 200%;
+}
+
+.autotoc-nav a {
+    color: black;
+}
+
+.pat-autotoc.autotabs  a.active,
+.pat-autotoc.autotabs  a:hover {
+    border-color: black;
+    cursor: default;
+    font-weight: bold;
+    border-bottom-color:  whitesmoke;
+    background: #EEE;
+
+}
+
+div.mb-3 {
+    display: flex;
+    font-size: 120%;
+}
+
+.pat-formunloadalert legend {
+    color: black
+}
+
+
+div.mb-3>label {
+    min-width: 12rem
+}
+
+div.mb-3 .form-text {
+    display: none;
+}
+
+input.date-widget,
+div.mb-3 .form-select {
+    max-width: 15rem;
+}
+
+
+.content-browser-wrapper {
+    width: 100%;
+}
+
+
+#formfield-form-widgets-notes,
+#formfield-form-widgets-private_notes  {
+    display: block
+}
+
+ 
