@@ -5,6 +5,58 @@ h2 {
 	margin: 0 0 2em 0;
 	padding: 0 0.75em 0.5em 0; 
 }
+
+.pat-formunloadalert {
+    background: whitesmoke;
+    max-width: 1340px;
+    margin: auto;
+    padding: 2rem;
+
+}
+
+.pat-formunloadalert .form-label,
+.pat-formunloadalert legend,
+legend {
+    color: black !important;
+}
+
+.autotoc-nav a {
+    color: black;
+}
+
+
+.pat-autotoc.autotabs .autotoc-nav a.active {
+    border-color:  black;
+    cursor: default;
+    font-weight: bold;
+ 
+}
+
+div.mb-3 {
+    display: flex;
+    font-size: 120%;
+}
+
+.pat-formunloadalert legend {
+    color: black
+}
+
+
+div.mb-3>label {
+    min-width: 10rem
+}
+
+div.mb-3 .form-text {
+    display: none;
+}
+
+input.date-widget,
+div.mb-3 .form-select {
+    max-width: 15rem;
+ 
+}
+ 
+
  
 
 option[value=plone-link],
