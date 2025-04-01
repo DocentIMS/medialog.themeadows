@@ -1,11 +1,22 @@
+h2.sit_tit {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    margin: 0;
+    z-index: 4;
+    background-color: whitesmoke;
+}
+
 .template-edit .outer-wrapper,
-.template-action_items  .outer-wrapper{
+.template-action_items .outer-wrapper,
+.viewpermission-add-portal-content .outer-wrapper {
     background-color: #999;
     min-height: 100vh;
 }
 
 .template-action_items h1.documentFirstHeading,
-.template-edit h1.documentFirstHeading {
+.template-edit h1.documentFirstHeading,
+.viewpermission-add-portal-content h1.documentFirstHeading {
     background-color: rgb(95, 46, 46);
     padding: 1rem 2rem;
     color: white;
@@ -13,18 +24,20 @@
     margin-bottom: 0;
 }
 
+.viewpermission-add-portal-content #above-content-wrapper,
 .template-edit #above-content-wrapper,
 .template-action_items #above-content-wrapper {
     display: none !important;
 }
 
+.viewpermission-add-portal-content .pat-formunloadalert,
 .template-action_items .pat-formunloadalert,
 .template-edit .pat-formunloadalert {
     background: whitesmoke;
     max-width: 1340px;
     margin: auto;
     padding: 2rem;
-    box-shadow:   0 0 20px 2px #555 ;
+    box-shadow: 7px 7px 7px 2px #777;
 }
 
 #content .formControls {
@@ -44,12 +57,12 @@ legend {
     color: black;
 }
 
-.pat-autotoc.autotabs  a.active,
-.pat-autotoc.autotabs  a:hover {
+.pat-autotoc.autotabs a.active,
+.pat-autotoc.autotabs a:hover {
     border-color: black;
     cursor: default;
     font-weight: bold;
-    border-bottom-color:  whitesmoke;
+    border-bottom-color: whitesmoke;
     background: #EEE;
 
 }
@@ -63,9 +76,10 @@ div.mb-3 {
     color: black
 }
 
-
 div.mb-3>label {
-    min-width: 12rem
+    min-width: 13rem;
+    font-size: 1.2rem;
+    ;
 }
 
 div.mb-3 .form-text {
@@ -77,15 +91,13 @@ div.mb-3 .form-select {
     max-width: 15rem;
 }
 
-
+.richtext-field, 
 .content-browser-wrapper {
-    width: 100%;
+    width: 100% !important;
 }
 
-
+#formfield-form-widgets-feedback_text,
 #formfield-form-widgets-notes,
-#formfield-form-widgets-private_notes  {
+#formfield-form-widgets-private_notes {
     display: block
 }
-
- 
