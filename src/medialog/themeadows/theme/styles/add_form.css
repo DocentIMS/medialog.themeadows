@@ -70,6 +70,22 @@ legend {
 div.mb-3 {
     display: flex;
     font-size: 120%;
+    flex-wrap: wrap;
+}
+
+div.mb-3 > div.pat-select2,
+div.mb-3 .form-control {
+    max-width: 100%;
+    width: calc( 100% - 16rem);
+    flex-grow: 5;
+}
+
+
+
+div.mb-3 .invalid-feedback {margin-top: 0}
+
+div.mb-3 table {
+    width: auto;
 }
 
 .pat-formunloadalert legend {
@@ -96,6 +112,28 @@ div.mb-3 .form-select {
     width: 100% !important;
 }
 
+#formfield-form-widgets-priority,
+#formfield-form-widgets-assigned_to {
+   width: 52%;
+  max-height: 3rem;
+   
+}
+
+#formfield-form-widgets-source, 
+#formfield-form-widgets-related_item {
+    display: none !important;
+}
+
+#formfield-form-widgets-related_members {
+    width: 37%;
+    float: right;
+    margin-top: -3rem;
+
+}
+
+div.mb-3.widgets.related_members,
+#formfield-form-widgets-related_members,
+#fieldname-form.widgets.related_members,
 #formfield-form-widgets-feedback_text,
 #formfield-form-widgets-notes,
 #formfield-form-widgets-private_notes {
