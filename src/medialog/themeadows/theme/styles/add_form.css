@@ -1,11 +1,22 @@
+.imagediv {
+    background-color: #fff;
+    text-align: center;
+}
+
+.imagediv > img {
+    height: 110px;
+    margin: auto;
+}
 h2.sit_tit {
     text-align: center;
     font-size: 1.3rem;
     padding: 0.3rem;
     margin: 0;
     z-index: 4;
-    background-color: whitesmoke;
+    background-color: rgb(95, 46, 46);
+    color: white;
 }
+
 
 .template-edit .outer-wrapper,
 .template-action_items .outer-wrapper,
@@ -17,10 +28,10 @@ h2.sit_tit {
 .template-action_items h1.documentFirstHeading,
 .template-edit h1.documentFirstHeading,
 .viewpermission-add-portal-content h1.documentFirstHeading {
-    background-color: rgb(95, 46, 46);
-    padding: 1rem 2rem;
-    color: white;
-    font-size: 1.5rem;
+    background-color:#f9f2e8;
+    padding: 0.7rem 2rem 0.7rem;
+    color: #555;
+    font-size: 1.15rem;
     margin-bottom: 0;
 }
 
@@ -119,9 +130,15 @@ div.mb-3 .form-select {
    
 }
 
+
 #formfield-form-widgets-source, 
 #formfield-form-widgets-related_item {
     display: none !important;
+}
+
+#formfield-form-widgets-contact_person,
+#formfield-form-widgets-feedback_submitted_by {
+    width: 40%;
 }
 
 #formfield-form-widgets-related_members {
