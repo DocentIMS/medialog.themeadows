@@ -1,3 +1,10 @@
+
+#portal-column-two {
+    padding: 0;
+    display: none;
+    margin-left: -30px !important;
+}
+
 .imagediv {
     background-color: #fff;
     text-align: center;
