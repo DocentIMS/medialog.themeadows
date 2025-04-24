@@ -13,6 +13,11 @@
       </after>
    </rules>
 
+   <rules css:if-content=".template-edit">
+      <after css:theme-children="head">
+         <link href="{$portal_url}/++theme++meadows-theme/styles/add_form.css" rel="stylesheet" />
+      </after>
+   </rules>
 
    <rules css:if-content="body.frontend#visual-portal-wrapper">
       <theme href="index.html" />

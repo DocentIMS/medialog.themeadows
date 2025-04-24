@@ -24,11 +24,11 @@ h2.sit_tit {
     color: white;
 }
 
-
+ 
 .template-edit .outer-wrapper,
 .template-action_items .outer-wrapper,
 .viewpermission-add-portal-content .outer-wrapper {
-    background-color: #999;
+    background-color: #999 !important;
     min-height: 100vh;
 }
 
