@@ -6,6 +6,7 @@
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
    <xi:include href="++theme++barceloneta/backend.xml"/>
+   
 
    <rules css:if-content="body.viewpermission-add-portal-content">
       <after css:theme-children="head">
