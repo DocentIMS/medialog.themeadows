@@ -2,7 +2,7 @@
 <object name="portal_types" meta_type="Plone Types Tool">
   <property name="title">Controls the available contenttypes in your portal</property>
   <!--<object name="example_ct" meta_type="Dexterity FTI"/>-->
-  <object name="Amenity" meta_type="Dexterity FTI"/>
-  <object name="Resident Information" meta_type="Dexterity FTI"/>
-  <object name="Board Only" meta_type="Dexterity FTI"/>
+  <!-- <object name="Amenity" meta_type="Dexterity FTI"/> -->
+  <!-- <object name="Resident Information" meta_type="Dexterity FTI"/> -->
+  <!-- <object name="Board Only" meta_type="Dexterity FTI"/> -->
 </object>
