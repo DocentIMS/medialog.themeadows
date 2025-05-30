@@ -8,8 +8,8 @@
 
   <browser:viewlet
      name="header-viewlet"
-     for="plone.app.contenttypes.interfaces.IDocument"
-     manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+     for="*"
+     manager="plone.app.layout.viewlets.interfaces.IAboveContent"
      layer="medialog.themeadows.interfaces.IMedialogThemeadowsLayer"
      class=".header_viewlet.HeaderViewlet"
      template="header-viewlet.pt"
