@@ -47,17 +47,17 @@
   <plone:static
       directory="theme"
       type="theme"
-      name="meadowsredtheme"
+      name="docent-theme"
       />
 
 
   <include package=".views" />
 
-  <plone:static
+  <!-- <plone:static
       directory="theme"
       type="theme"
-      name="meadows-theme"
-      />
+      name="docent-theme"
+      /> -->
 
 
 </configure>
