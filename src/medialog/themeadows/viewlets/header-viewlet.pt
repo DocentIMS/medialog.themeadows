@@ -41,5 +41,5 @@
 </header>
 <style>
     #header strong, 
-    #content-core h2 strong, #content-core .h2 strong {  border-color: {view/color|None} !important; }
+    #content-core h2 strong, #content-core .h2 strong {border-color: #${view/color|None} !important;}
 </style>
