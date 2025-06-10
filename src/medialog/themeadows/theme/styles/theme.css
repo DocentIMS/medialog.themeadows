@@ -17524,9 +17524,7 @@ table.alt tfoot {
   background: red !important;
 }
 
-td.sorting_1 {
-  display: none !important;
-}
+ 
 
 .card-header a {
   color: black !important;
@@ -17540,45 +17538,12 @@ td.sorting_1 {
   text-decoration: none;
 }
 
-#sidebar nav li {
-  border-top: solid 1px rgba(210, 215, 217, 0.75) !important;
-  margin: 0.5em 0 0 0 !important;
-  padding: 0.5em 0 0 0 !important;
-  list-style-type: none !important;
-}
-
-#sidebar .navTreeItem a,
-#sidebar nav li a {
-  color: black !important;
-  text-decoration: none !important;
-  transition: none !important;
-  text-transform: uppercase;
-  border-bottom: 0 none;
-}
-
-#sidebar {
-  min-height: 100vh;
-  height: 100%;
-  transform: translateX(0);
-  transition: transform 1.6s ease-in-out;
-}
-
-#sidebar.sidebar-hidden,
-.sidebar-hidden {
-  transform: translateX(0);
-  transition: transform 1.6s ease-in-out;
-  width: 0 !important;
-  display: none !important;
-}
-
 .card-header {
   border-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
 
-#sidebar ul.navTree {
-  padding-left: 0;
-}
+ 
 
 body.col-one.col-content #portal-column-content {
   padding-left: 4rem;

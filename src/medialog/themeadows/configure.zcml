@@ -42,29 +42,22 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
-  <plone:static
-      directory="theme"
-      type="theme"
-      name="docent-i-m-s-theme"
-      />
-
-
   <include package=".viewlets" />
 
   <plone:static
       directory="theme"
       type="theme"
-      name="docent-theme"
+      name="meadowsredtheme"
       />
 
 
   <include package=".views" />
 
-  <!-- <plone:static
+  <plone:static
       directory="theme"
       type="theme"
-      name="docent-theme"
-      /> -->
+      name="meadows-theme"
+      />
 
 
 </configure>

@@ -20,10 +20,10 @@ Configure TinyMCE Templates
     [
         {
           "title": "List",
-          "url": "++theme++docent-theme/tinymce-templates/list.html"
+          "url": "++theme++meadowsredtheme/tinymce-templates/list.html"
         },
         {
           "title": "Card Group",
-          "url": "++theme++docent-theme/tinymce-templates/card-group.html"
+          "url": "++theme++meadowsredtheme/tinymce-templates/card-group.html"
         },
     ]
